@@ -1,0 +1,17 @@
+.hidden {
+    visibility:hidden;
+
+}
+
+.visable{
+    visibility: visible;
+}
+
+.blueBackground {
+    background-color: #305f96;
+}
+
+.text-white {
+    color: #ffffff;
+    font-weight: bolder;
+}
