@@ -2,6 +2,7 @@ package com.astontech.hr.bootstrap;
 
 import com.astontech.hr.domain.*;
 import com.astontech.hr.services.*;
+import org.h2.util.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -36,6 +37,9 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent> {
 
     @Autowired
     private AddressService addressService;
+
+    @Autowired
+    private SchedulerService schedulerService;
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event){
@@ -221,6 +225,13 @@ public class SeedData implements ApplicationListener<ContextRefreshedEvent> {
         vehicleThreeTesla.setVehicleModel(vehicleModelX);
 
         vehicleService.saveVehicle(vehicleThreeTesla);
+
+    }
+
+    private void generateScheduler(){
+
+
+
 
     }
 
