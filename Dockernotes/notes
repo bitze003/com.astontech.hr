@@ -57,6 +57,8 @@ sudo apt install docker.io
 
 **Check if docker was installed by running:
 docker ps
+or
+docker -v
 
 **Create a dockerfile.  Add a file called "Dockerfile" to the top module of your application.
 **insert into the file:
